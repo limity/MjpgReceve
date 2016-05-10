@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/indexAct">
+
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="后退"
+            android:textColor="#000000"
+            android:textSize="@dimen/fab_margin"
+            android:background="@drawable/bottom_btn"
+            />
+        <Button android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_back"
+            android:text="左转"
+            android:textColor="#000000"
+            android:layout_alignBottom="@id/btn_back"
+            android:textSize="@dimen/fab_margin"
+            android:background="@drawable/left_btn"
+            android:width="80dp"
+            android:height="100dp"
+            />
+        <Button android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_back"
+            android:text="右转"
+            android:textColor="#000000"
+            android:layout_alignBottom="@id/btn_back"
+            android:textSize="@dimen/fab_margin"
+            android:background="@drawable/right_btn"
+            />
+        <Button android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/fab_margin"
+            android:layout_toRightOf="@id/btn_left"
+            android:layout_toLeftOf="@id/btn_right"
+            android:layout_above="@id/btn_back"
+            android:layout_alignTop="@id/btn_left"
+            android:text="前进"
+            android:textColor="#000000"
+            android:textSize="@dimen/fab_margin"
+            android:background="@drawable/top_btn"
+            />
+    </RelativeLayout>
+</LinearLayout>

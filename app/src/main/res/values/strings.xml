@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mjpg</string>
+    <string name="title_activity_index">视频输出</string>
+    <string name="action_bar">设置</string>
+</resources>
